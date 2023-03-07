@@ -1,0 +1,75 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--Violet) url(images/bg-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.navbar{
+  padding: 4%;
+}
+
+p{
+  color: white;
+  font-weight: 400;
+  margin-bottom: 5%;
+  font-family: "Open Sans";
+}
+
+button {
+  background-color: white;
+  border-radius: 30px;
+  padding: 2% 8%;
+  border: none;
+  color: var(--Violet);
+  box-shadow: 0 0 10px black;
+  margin-bottom: 5%;
+}
+
+.social-media{
+  color: white;
+  display: flex;
+  justify-content: right;
+}
+
+.social-media ion-icon{
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .col-lg-6 {
+    text-align: center;
+  }
+
+  body{
+    background: var(--Violet) url(images/bg-mobile.svg);
+  }
+
+  .social-media{
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+}
